@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+#logo1 {
+    position: absolute;
+    left: -2%;
+    top: 9%;
+}
+
+#logo2 {
+
+    margin-left: 20%;
+    margin-top: -5%;
+}
+
+#registro {
+    display: inline-flex;
+    background-color: #8FD2E8;
+    color: white;
+    width: 100px;
+    height: 43px;
+    border-color: transparent;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    
+
+}
+
+#registrado {
+    
+    position: absolute;
+    right: 19%;
+    top: 8%;
+}
+
+#ingresar {
+    display: inline-flex;
+    background-color: #8FD2E8;
+    color: white;
+    width: 100px;
+    height: 43px;
+    border-color: transparent;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 12%;
+    top: 8%;
+}
+
+#carrito {
+    text-align: center;
+    display: inline-flex;
+    background-color: white;
+    color: #8FD2E8;
+    width: 130px;
+    height: 50px;
+    border-color: transparent;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 8%;
+    top: 16%;
+    font-size: 15px;
+}
+
+#busquedabarra {
+    width: 325px;
+    height: 43px;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid grey;
+    padding: 5%;
+}
+
+#buscar {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #E0A9C6;
+    color: white;
+    width: 100px;
+    height: 43px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+    font-size: 20px;
+}
+
+#buscador {
+    position: absolute;
+    left: 24%;
+    top: 20%;
+}
+
+
+ul {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+a {
+    text-decoration: none;
+    padding: 45px;
+    color: black;
+
+}
+
+li {
+    display: inline-block;
+    font-size: 20px;
+    
+    
+}
+
+#productos {
+    padding-inline: 17%;
+    
+}
+
+#botones {
+
+    background-color: white;
+    margin: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    border: 3px solid #8FD2E8;
+    width: 8cm;
+    height: 10cm;
+
+}
+
+
+
+#botonproductos {
+    background-color: #8FD2E8;
+    color: white;
+    font-size: 25px;
+    width: 110px;
+    height: 25px;
+    border-color: transparent;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 3px;
+    position: relative;
+    left: 29%;
+}
+
+article p {
+    font-size: 20px;
+}
+
+#datos1 {
+    background-color: #8FD2E8;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#textofooter1 {
+    position: relative;
+    top: 45px;
+}
+
+#datos2 {
+    background-color: #8FD2E8;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    border-top: 10px solid white;
+    position: absolute;
+    height: 50px;
+}
+
+#textofooter2 {
+    position: relative;
+    bottom: 10px;
+}
+
+#boton {
+    background-color: #8FD2E8;
+    padding: 15px;
+    margin-right: 60px;
+    border-radius: 15px;
+    color: white;
+}
+
+#redes {
+    position: relative;
+    left: 5cm;
+    bottom: 72px;
+}
