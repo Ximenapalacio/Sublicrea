@@ -204,3 +204,62 @@ article p {
     left: 5cm;
     bottom: 72px;
 }
+
+#Xtitulomug {
+    background-color: #8FD2E8;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+#Xtitulosprodmug {
+    background-color: #8FD2E8;
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+    margin-top: 15px;
+    position: relative;
+    text-align: justify;
+}
+
+#Xcategoriamug {
+    
+    list-style: none;
+    text-align: center;
+    
+
+}
+
+#xboton {
+    color: white;
+    text-decoration: none;
+    padding: 115px;
+}
+
+#ulmug {
+    background-color: #8FD2E8;
+}
+
+#xbotones {
+    background-color: white;
+    font-size: 25px;
+    border-color:#8FD2E8;
+    border-radius: 50px;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px;
+    margin: 47px;
+}
+
+#Xproductos {
+    padding-inline: 35px;
+}
+
+#Xañadir {
+    background-color: #E0A9C6;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+
+}
