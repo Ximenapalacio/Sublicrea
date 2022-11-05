@@ -32,15 +32,15 @@ body {
     position: absolute;
     right: 5%;
     top: 8%;
-    
-
 }
+
 
 #registrado {
     
     position: absolute;
     right: 19%;
     top: 8%;
+    
 }
 
 #ingresar {
@@ -249,7 +249,7 @@ article p {
     justify-content: center;
     text-decoration: none;
     padding: 15px;
-    margin: 47px;
+    margin: 15px;
 }
 
 #Xproductos {
@@ -264,4 +264,189 @@ article p {
 
 }
 
+#mensaje {
+    text-align: right;
+    position: relative;
+    font-size: 25px;
+    top: 50%;
+}
 
+#logonosotros {
+    position: relative;
+}
+
+
+#EDproductos2 
+     {
+      margin-top: -70px;
+     padding-inline: 5%;
+     }
+  
+    #EDbotones2 
+    {
+     background-color: white;
+     margin: 10px;
+     border-radius: 30px;
+     padding: 10px;
+     border: 3px solid #8FD2E8;
+     width: 7cm;
+     height: 10cm;
+    }
+  
+    #EDbotonproductos2 {
+     background-color: #E0A9C6;
+     color: white;
+     font-size: 15px;
+     width: 160px;
+     height: 25px;
+     border-color: transparent;
+     border-radius: 15px;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     padding: 3px;
+     position: relative;
+     left: 17%;
+     }
+  
+      /*FIN CODIGO = CATEGORIA GENERAL TEXTIL*/
+  
+      /*COGIDO = CAMISAS*/
+  
+      #EDcamisetas3 {
+        position: relative;
+        bottom: -30px;
+        font-size: 30px;
+        color: white;
+        font-family:  Calibri;
+        text-align:center;
+        background-color: #8FD2E8;
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 60px;
+       }
+  
+        #EDCamisas 
+        {
+         margin-top: -20px;
+        padding-inline: 4%;
+        }
+     
+       #EDbotonescamisas 
+       {
+        background-color: white;
+        margin: 10px;
+        border-radius: 30px;
+        padding: 10px;
+        border: 3px solid #8FD2E8;
+        width: 9cm;
+        height: 10cm;
+       }
+     
+       #EDbotonRegresar {
+        background-color: #8fd2e8;
+        color: white;
+        font-size: 15px;
+        width: 160px;
+        height: 40px; /*Para que el boton se vea un poco mas grande*/
+        border-color: transparent;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 5px;
+        position: relative;
+        left: 8%;  /*Esta es la posicion centrado a la imagen camisetas*/
+        }
+  
+       #EDcantidad1
+      {
+      width: 5px;
+      height: 5px;
+      padding: 0px;
+      color: #8FD2E8;
+      position: relative;
+      left: -1%;/*la posicion en relacion al boton de abajo*/
+      margin-top: 110px;
+      margin-left: 80px;
+      }
+  
+      h6
+      {
+        margin-bottom: 3px;
+      }
+  
+      #EDContador1
+      {
+        width: 50px;
+        height: 25px;
+      }
+  
+      #EDValorproductos
+      {
+       color:#8FD2E8;
+       position: relative;
+       margin-top: -50px;
+       margin-left: 250px;
+       font-size: 40px;
+       margin-bottom: 15px;
+      }
+  
+        #EDbotonCotizar
+        {
+          background-color:#E0A9C6;
+          color: white;
+          font-size: 19px;
+          width: 250px;
+          height: 40px; /*Para que el boton se vea un poco mas grande*/
+          border-color: transparent;
+          border-radius: 15px;
+          align-items: center;
+          justify-content:center;
+          text-decoration: none;
+          padding: auto;
+          position: relative;
+          left: 25.5%;/*la posicion en relacion al boton de abajo*/
+          margin-top: -50px;
+        }
+  
+        #Edminiwpp
+        {
+          width: 20px;
+          height: 20px;
+          margin:0px;
+          color: #E0A9C6;
+          background-color: #E0A9C6;
+        }
+       
+  
+        #EDbotonFinalizarCompra
+        {
+          background-color:#8fd2e8;
+          color: white;
+          font-size: 15px;
+          width: 200px;
+          height: 35px; /*Para que el boton se vea un poco mas grande*/
+          border-color: transparent;
+          border-radius: 20px;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          padding: 15px;
+          position: relative;
+          bottom: -50px;
+          left: -20px;
+        }
+  
+         /*TEXTO= Camisas*/
+         .EDtextocamisas
+         {
+          background-color: white;
+          float: right;
+          width: 800px;
+          height: 200px;
+          margin-top: 10px;
+          margin-bottom: 12 px;
+          font-size: 25px;
+         }
+  
