@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    font-family: "Inter", sans-serif;
+  }
+  
+  #logo1 {
+    position: absolute;
+    left: -2%;
+    top: 9%;
+  }
+  
+  #logo2 {
+    margin-left: 20%;
+    margin-top: -5%;
+  }
+  
+  #registro {
+    display: inline-flex;
+    background-color: #8fd2e8;
+    color: white;
+    width: 100px;
+    height: 43px;
+    border-color: transparent;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+  }
+  
+  #registrado {
+    position: absolute;
+    right: 19%;
+    top: 8%;
+  }
+  
+  #ingresar {
+    display: inline-flex;
+    background-color: #8fd2e8;
+    color: white;
+    width: 100px;
+    height: 43px;
+    border-color: transparent;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 12%;
+    top: 8%;
+  }
+  
+  #carrito {
+    text-align: center;
+    display: inline-flex;
+    background-color: white;
+    color: #8fd2e8;
+    width: 130px;
+    height: 50px;
+    border-color: transparent;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    right: 8%;
+    top: 16%;
+    font-size: 15px;
+  }
+  
+  #busquedabarra {
+    width: 325px;
+    height: 43px;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid grey;
+    padding: 5%;
+  }
+  
+  #buscar {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #e0a9c6;
+    color: white;
+    width: 100px;
+    height: 43px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+    font-size: 20px;
+  }
+  
+  #buscador {
+    position: absolute;
+    left: 24%;
+    top: 20%;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 45px;
+    color: black;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  #DATOSENVIO {
+    background-color: #8fd2e8;
+    padding: 20px;
+    color: rgb(252, 246, 246);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+  
+  #boton{
+    border-radius: 20px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    border-top: 10px;
+    border-left: 15px;
+    list-style: none;
+
+
+
+  }

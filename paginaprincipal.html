@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
+
+    <!-- HEADER-->
   <div>
     <!-- LOS DOS LOGOS-->
     <header>
@@ -31,32 +33,38 @@
 
               <!-- TODA LA PARTE DE LA DERECHA, REGISTRARSE INGRESAR Y EL CARRITO -->
          
-        <div class="ResponsiveBotones">
+        <div class="ResponsiveBotonRegistrado">
            <a href="paginaprincipal.html"> <img  id="registrado" src="img/botones logos/usuarionoregistrado.png" alt="" height="40px"></a>
+          </div>
 
-           <button style="cursor: pointer" id="registro" ><a href="Registro.html" style="color:white;">Registrarse</a> </button>
+          <div class="ResponsiveRegistrarse">
+           <button style="cursor: pointer" id="registro" ><a href="Registro.html" style="color:white;">Registrarse</a> </button></div>
          
-
-           <button style="cursor: pointer" id="ingresar"> <a href="InicioSesion.html" style="color:white;">Ingresar </a> </button>
-        </div>
-            
-              <a href="carrito.html"><button style="cursor: pointer" id="carrito"> <img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button></a>
-            </a> 
+          <div class="ResponsiveIngresar">
+           <button style="cursor: pointer" id="ingresar"> <a href="InicioSesion.html" style="color:white;">Ingresar </a> </button></div>
+      
+            <div class="ResponsiveCarrito">
+              <a href="Carritocompras.html"><button style="cursor: pointer" id="carrito"> <img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button></a>
+            </a> </div>
           
       </header>
 
               <!-- BARRA DEL MENU -->
 
-        <nav>
-          <ul>
-            <li><a href="nosotros.html" id="boton"> NOSOTROS </a></li>
-            <li><a href="" id="boton"> NUESTROS PRODUCTOS </a></li>
-            <li><a href="" id="boton"> ELIGE TU ESTILO </a></li>
-            <li><a href="" id="boton"> COTIZACIONES </a></li>
-            <li><a href="" id="boton"> PROMOCIONES </a></li>
-            <li><a href="" id="boton"> CONTACTO </a></li>
-          </ul>
-        </nav>
+    <nav>
+      <ul class="barra">
+          <li class="lis"><a href="nosotros.html" class= "boton" id="boton"> NOSOTROS </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> NUESTROS PRODUCTOS </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> ELIGE TU ESTILO </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> COTIZACIONES </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> PROMOCIONES </a></li>
+          <li class="lis"  ><a href="" class= "boton" id="boton"> CONTACTO </a></li>
+      </ul>
+    </nav>
+      
+  </div>
+
+         <!-- FIN DEL HEADER-->
 
         <!-- LA IMAGEN PRINCIPAL -->
 
@@ -64,34 +72,45 @@
           <img src="img/Imagenes principales/Presentacion.jpg" alt="" width="100%">
         </article>
 
-        <!-- LOS PRODUCTOS -->
+        <!-- LOS PRODUCTOS DE LA PAGINA PRINCIPAL-->
+         
+        <article class="productos" id="productos">
+         
+          <button class="botones" id="botones" style="cursor: pointer"> <a href="Mugs.html"><img src="img/mugs/mug blanco.jpg" alt="" height="230px"></a>
+            <p class="botonproductos"  id="botonproductos"> Mugs </p> 
+            <p class="precioeu"><strong> Desde 15.900 </strong> </p>
+           </button>
+         
 
-        <article id="productos" >
-          <button id="botones" style="cursor: pointer"> <a href="Mugs.html"><img src="img/mugs/mug blanco.jpg" alt="" height="220px"> </a>
-            <p id="botonproductos"> Mugs </p> 
-            <p><strong> Desde 15.900 </strong> </p>
+          <button class="botones" id="botones" style="cursor: pointer" > <a href="paginaproductos.html"><img src="img/Termos/Caramañola.jpg" alt="" height="230px"></a>
+            <p class="botonproductos"  id="botonproductos"> Termos </p> 
+            <p class="precioeu"> <strong>  Desde 19.000 </strong></p>
            </button>
-           <button id="botones" style="cursor: pointer" > <a href="paginaproductos.html"><img src="img/Termos/Caramañola.jpg" alt="" height="230px"> </a>
-            <p id="botonproductos"> Termos </p> 
-            <p> <strong>  Desde 19.000 </strong></p>
+         
+
+          <button class="botones" id="botones" style="cursor: pointer"> <a href="ProductosTextil.html"><img src="img/Textil/Pad mouse.jpg" alt="" height="230px"></a> 
+            <p class="botonproductos" id="botonproductos"> Textil </p> 
+            <p class="precioeu"> <strong> Desde 12.000 </strong> </p>
            </button>
-           <button id="botones" style="cursor: pointer"> <a href="ProductosTextil.html"><img src="img/Textil/Pad mouse.jpg" alt="" height="230px"></a> 
-            <p id="botonproductos"> Textil </p> 
-            <p> <strong> Desde 12.000 </strong> </p>
+         
+
+         <button class="botones" id="botones" style="cursor: pointer"><a href="CATEGORIA.MDF.html"><img src="img/Mdf/Rompecabeza cuadrado.jpg" alt="" height="230px"></a>  
+            <p class="botonproductos"  id="botonproductos"> MDF </p> 
+            <p class="precioeu"> <strong> Desde 5.000 </strong> </p>
            </button>
-           <button id="botones" style="cursor: pointer"><a href="CATEGORIA.MDF.html"><img src="img/Mdf/Rompecabeza cuadrado.jpg" alt="" height="230px"></a>  
-            <p id="botonproductos"> MDF </p> 
-            <p> <strong> Desde 5.000 </strong> </p>
+         
+          <button class="botones" id="botones" style="cursor: pointer" > <a href="Agendas.html"><img src="img/Libretas/agenda 10x14.jpg" alt="" height="230px"></a>
+            <p class="botonproductos"  id="botonproductos"> Agendas </p> 
+            <p class="precioeu"> <strong> Desde 12.000 </strong> </p>
            </button>
-           <button id="botones" style="cursor: pointer" > <a href="Agendas.html"><img src="img/Libretas/agenda 10x14.jpg" alt="" height="230px"> </a>
-            <p id="botonproductos"> Agendas </p> 
-            <p> <strong> Desde 12.000 </strong> </p>
+         
+          <button  class="botones" id="botones" style="cursor: pointer"> <a href="CATEGORIA.VINIL.ADH.html"><img src="img/Vinil adhesivo/Copas.jpg" alt="" height="230px"></a> 
+            <p class="botonproductos"  id="botonproductos"> Vinil ADH </p> 
+            <p class="precioeu"> <strong> Desde 7.000 </strong> </p>
            </button>
-           <button id="botones" style="cursor: pointer"> <a href="CATEGORIA.VINIL.ADH.html"><img src="img/Vinil adhesivo/Copas.jpg" alt="" height="230px"> </a> 
-            <p id="botonproductos"> Vinil ADH </p> 
-            <p> <strong> Desde 7.000 </strong> </p>
-           </button>
+         
           </article>
+
 
           <!-- BARRA DE DATOS INFERIOR -->
 

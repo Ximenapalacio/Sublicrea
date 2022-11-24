@@ -4,30 +4,33 @@
 body {
     margin: 0;
     font-family: 'Dancing Script', cursive;
-    font-family: 'Inter', sans-serif;
-  
+    font-family: 'Inter', sans-serif; 
 }
+
+
 
 /*LOGO*/
 #logo1 {
     position: relative;
     
     left: -3%; /*posicion hacia la izquierda del logo*/
-    margin-bottom: 60px; /*Posicion del logo*/
+    margin-bottom: 80px; /*Posicion del logo*/
+    margin-top: 20px;
 }
 
 /*Nombre de la Empresa*/
 #logo2 {
     position: relative;
-    margin-left: -2%;
-    margin-top: -5%; /*Posicion del titulo*/
+    margin-left: 30px;
+    margin-bottom: -10px; /*Posicion del Titulo con el buscador*/
+    margin-top: -15%; /*Posicion del titulo*/
 }
 
 /*Botonsito de registrarse*/
 #registrado {
     position: absolute;
-    right: 11%; /*Posicion a la izquierda del botoncito*/
-    top: 27%;
+    right: 23%; /*Posicion a la izquierda del botoncito*/
+    top: 8%;
 }
 
 /*Botones extremo derecho superior*/
@@ -59,7 +62,7 @@ body {
     justify-content: center;
     text-decoration: none;
     position: absolute;
-    right: 14%; /*Posicion del boton ingresar*/
+    right: 15%; /*Posicion del boton ingresar*/
     top: 8%;
 }
 
@@ -76,7 +79,7 @@ body {
     text-decoration: none;
     position: absolute;
     right: 8%;
-    top: 17%;
+    top: 20%; /*Distancia del carrito con los botones*/
     font-size: 15px;
 }
 
@@ -84,7 +87,7 @@ body {
 #buscador {
     position: absolute;
     left: 26%;
-    top: 25%;
+    top: 28%;
     margin-top: -30px; /*la distancia del buscador con el titulo*/
 }
 
@@ -122,7 +125,7 @@ body {
    position: relative; 
    text-align: center;
    margin-bottom: 0px; /*la distancia del buscador con la barra del menú*/
-   left: -100px; /*Posicion del buscador*/
+   left: 70px; /*Posicion del buscador*/
 }
 
 .ResponsiveLogo
@@ -136,36 +139,201 @@ body {
 
 .ResponsiveNombre
 {
-    position: relative;
-    text-align: center;
-    margin-bottom: -30px;
-    margin-left: -2%;
-    margin-top: -15%; /*Posicion del titulo*/
-}   
+    margin-top: -150px;
+    margin-left: 350px;
+}
 
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 500*/
 
-
-/* RESPONSIVE DE LA PAGINA PRINCIPAL*/
-
-@media only screen and (min-width:600px)
+@media only screen and (max-width:500px)
 {
   .ResponsiveBuscador, .ResponsiveLogo, .ResponsiveNombre
   {
    flex-direction: column;
   }
+
+  .ResponsiveLogo
+  {
+    left:-60px;
+  }
+   
+   .ResponsiveBotonRegistrado
+   {
+    position: absolute;
+    margin: 50px;
+    top: -10px;
+    left: 110px;
+   }
+
+   .ResponsiveIngresar
+   {
+    position: absolute;
+    right: 140px;
+    top: 40px;
+   }
+
+   .ResponsiveRegistrarse
+   {
+    position:absolute;
+    right: 20px;
+    top: 40px;
+   }
+
+   .ResponsiveCarrito
+   {
+    position: absolute;
+    right: 70px;
+    top:100px;
+   }
+
+ .ResponsiveNombre
+   {
+    position: relative;
+    text-align: center;
+    margin-bottom: -40px;
+    margin-left: -12%;
+    margin-top: 10%; /*Posicion del titulo*/
+   }   
  
-  
+   .ResponsiveBuscador
+   {
+    left: -90px;
+    margin-bottom: 30px;
+   }
+}
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 700*/
+@media only screen and (min-width:700px)
+{
+    .ResponsiveLogo
+    {
+      position: relative;
+      margin-left: -20px;
+      margin-top: 10px;
+    }
+
+    .ResponsiveBotonRegistrado
+   {
+    position: absolute;
+    margin: 0px;
+    top: 40px;
+    left: 430px;
+   }
+
+   .ResponsiveIngresar
+   {
+    position: absolute;
+    right: 130px;
+    top: 40px;
+   }
+
+   .ResponsiveRegistrarse
+   {
+    position:absolute;
+    right: 20px;
+    top: 40px;
+   }
+
+    .ResponsiveNombre
+    {
+    position: relative;
+    text-align: center;
+    margin-bottom: -39px;
+    margin-left: -9%;
+    margin-top: 6%; /*Posicion del titulo*/
+    }
+
+    .ResponsiveBuscador
+    {
+     left: -70px;
+     margin-bottom: 20px;
+    }
+}
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 1200*/
+@media only screen and (min-width:1200px)
+{
+    .ResponsiveLogo
+    {
+      position: relative;
+      margin-left: -10px;
+      margin-top: 10px;
+    }
+
+    .ResponsiveBotonRegistrado
+   {
+    position: absolute;
+    margin: 0px;
+    top: 40px;
+    right: 40px;
+   }
+
+   .ResponsiveIngresar
+   {
+    position: absolute;
+    right: 130px;
+    top: 40px;
+   }
+
+   .ResponsiveRegistrarse
+   {
+    position:absolute;
+    right: 20px;
+    top: 40px;
+   }
+
+    .ResponsiveNombre
+    {
+    position: relative;
+    text-align: center;
+    margin-bottom: -45px;
+    margin-left: -5%;
+    margin-top: 2%; /*Posicion del titulo*/
+    }
+
+    .ResponsiveBuscador
+    {
+     left: 80px;
+     margin-bottom: 20px;
+    }
 }
 
 
-/* FIN BUSCADOR : RESPONSIVE DE LA PAGINA PRINCIPAL*/
+/*Responsive de la barra de Menú*/
+@media (min-width:500px) {
+
+    .barra {
+        list-style: none;
+        padding: 10px;
+        text-align: center;
+    }
+   
+    .boton {
+        text-decoration: none;
+        padding: 15px;
+        color: black;
+       
+    }
+   
+    .lis {
+        display: inline-block;
+        font-size: 20px;
+        margin-top: 35px;
+        border-right: 1px solid black;
+    }
+
+    a:hover {
+        color:#8FD2E8;
+      }
+}
+
+
 
 ul {
-    background-color: #8FD2E8; /*color de la barra del menu*/
-    border-radius: 3px; /*borde de la barra del menu*/
     list-style: none;
-    padding: 10px;   
-    margin-top: -10px; 
+    padding: 10px;
+   
+   
 }
 
 a {
@@ -177,8 +345,64 @@ a {
 
 li {
     display: inline-block;
-    font-size: 16px; /*Tamaño de la letra de la barra del menu*/
+    font-size: 20px;
+   
+   
 }
+
+
+@media only screen and (min-width: 700px ) {
+    .barra {
+        list-style: none;
+        padding: 30px;
+        text-align: center;
+    }
+   
+    .boton {
+        text-decoration: none;
+        padding: 15px;
+        color: black;
+    }
+   
+    .lis {
+        display: inline-block;
+        font-size: 20px;
+        margin-top: 35px;
+        border-right: 1px solid black;
+    }
+
+    a:hover {
+        color:#8FD2E8;
+      }
+
+    @media only screen and (min-width: 1200px ) {
+        .barra {
+            list-style: none;
+            padding: 30px;
+            text-align: center;
+        }
+       
+        .boton {
+            text-decoration: none;
+            padding: 15px;
+            color: black;
+        }
+       
+        .lis {
+            display: inline-block;
+            font-size: 20px;
+            margin-top: 35px;
+            border-right: 1px solid black;
+        }
+
+        a:hover {
+            color:#8FD2E8;
+          }
+    }
+}
+
+/* FIN : RESPONSIVE DEL HEADER DE  LA PAGINA PRINCIPAL*/
+
 
 #productos {
     padding-inline: 16%;
@@ -200,6 +424,8 @@ li {
 #botones img
 {
     height: 200px; /*Tamaño de la imagen de los productos*/
+    width: auto;
+    
 }
 
 
@@ -221,6 +447,128 @@ li {
 article p {
     font-size: 20px;
 }
+
+/*Responsive de los productos 500px*/
+
+@media only screen and (max-width:500px)
+{
+    .botones{
+        width: 200px;
+        height: 220px;
+        position: relative;
+        left: -70px;
+    }
+    .botones img{
+    height: 140px;
+    width: 130px;
+    position: relative;
+    left: -17px;
+    border-radius: 30px;
+    }
+    .botonproductos{
+        font-size: 15px;
+        left: 35px;
+        top: -5px;
+        padding: 2px;
+        height: 15px;
+        width: 90px;
+        position: relative;
+    }
+    .precioeu{
+        font-size: 12px;
+        top: -11px;
+        left: -6px;
+        position: relative;
+    }
+    .productos{
+      display: contents;
+      display: table-row-group;
+      position: relative;
+      left: 90px;
+    }
+}
+/*Fin responsive de los productos 500px*/
+
+/*Responsive de los productos 700px*/
+@media only screen and (max-width:700px){
+    .botones{
+        width: 200px;
+        height: 220px;
+        position: relative;
+        left: -70px;
+    }
+    .botones img{
+    height: 140px;
+    width: 130px;
+    position: relative;
+    left: -17px;
+    border-radius: 30px;
+    }
+    .botonproductos{
+        font-size: 15px;
+        left: 35px;
+        top: -5px;
+        padding: 2px;
+        height: 15px;
+        width: 90px;
+        position: relative;
+    }
+    .precioeu{
+        font-size: 12px;
+        top: -11px;
+        left: -6px;
+        position: relative;
+    }
+    .productos{
+      display: contents;
+      display: table-row-group;
+      position: relative;
+      left: 80px;
+    }
+}
+/*Fin responsive de los productos 700px*/
+
+/*Responsive de los productos 1200px*/
+@media only screen and (max-width:1200px)
+{
+    .botones{
+        width: 320px;
+        height: 400px;
+        position: relative;
+        left: -70px;
+    }
+    .botones img{
+    height: 250px;
+    width: 240px;
+    position: relative;
+    left: -17px;
+    border-radius: 30px;
+    top: -7px;
+    }
+    .botonproductos{
+        font-size: 25px;
+        left: 80px;
+        top: -5px;
+        padding: 8px;
+        height: 15px;
+        width: 110px;
+        position: relative;
+        padding-bottom: 23px;
+    }
+    .precioeu{
+        font-size: 20px;
+        top: -11px;
+        left: -6px;
+        position: relative;
+    }
+    .productos{
+      display: contents;
+      display: table-row-group;
+      position: relative;
+      left: 140px;
+    }
+} 
+/*Fin responsive de los productos 1200px*/
 
 
 /*CSS de los Mugs*/
@@ -513,7 +861,7 @@ article p {
           /*FOOTER = Pagina Principal con Responsive*/
         
            
-     @media only screen and (min-width:500px)
+     @media only screen and (min-width:400px)
      {
 
       .EDdatos1 
@@ -529,7 +877,7 @@ article p {
       text-align: center;
       top: 45px;
       background-color: #8FD2E8;
-      width: 100%;
+      width: 97%;
       padding: 10px;
      }
       .EDredes
@@ -545,7 +893,7 @@ article p {
      {
       margin-top: -10px;
       background-color: #8FD2E8;
-      width: 102%;
+      width: 99%;
       text-align: center;
       font-size: 20px;
       border-top: 15px;

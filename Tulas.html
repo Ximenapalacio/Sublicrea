@@ -14,39 +14,60 @@
 
  <body>
 
-     <!-- Logo y Nombre -->
-    <a href="paginaprincipal.html"><div class="Logo"><img src="img/Logo/logo grande png.png" alt="" height="100px"></div></a>
-    <div class="Nombre"><img src="img/Logo/logo nombre png.png" alt=""  height="300"></div>
-
-    <!-- BUSCADOR -->
-    <p id="buscador" >  
-      <input id="busquedabarra" type="search" name="busquedaproductos" placeholder="Que estas buscando..." size="25" maxlength="4">
-      <input id="buscar" style="cursor: pointer" type="submit" value="Buscar">
-    </p>
-
-    <!-- TODA LA PARTE DE LA DERECHA, REGISTRARSE INGRESAR Y EL CARRITO -->
-          
-    <img  id="registrado" src="img/botones logos/usuarionoregistrado.png" alt="" height="40px">
-
-   
-      <a href="Registro.html"> <button style="cursor: pointer" id="registro">Registrarse</button></a>
-      <a href="InicioSesion.html"><button style="cursor: pointer" id="ingresar"> Ingresar</button></a> 
-      <button style="cursor: pointer" id="carrito"><img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button>
-  
-
+      <!-- HEADER-->
+  <div>
+    <!-- LOS DOS LOGOS-->
+    <header>
     
-     <!-- Barra de Navegador -->
-     <nav>
-      <ul>
-        <li><a href="NOSOTROS.html">NOSOTROS</a></li>
-        <li><a href="">NUESTROS PRODUCTOS</a></li>
-        <li><a href="">ELIGE TU ESTILO </a></li>
-        <li><a href="">COTIZACIONES</a></li>
-        <li><a href="">PROMOCIONES</a></li>
-        <li><a href="">CONTACTO</a></li>
-      </ul>
-     </nav>
+      <div class="ResponsiveLogo">
+      <a href="paginaprincipal.html"> <img style="cursor: pointer" id="logo1" src="img/Logo/logo grande png.png" alt="" height="135"></a></div>
 
+      <div class="ResponsiveNombre">
+      <img  id="logo2" src="img/Logo/logo nombre png.png" alt="" height="300px"></div>
+    
+      <!-- BUSCADOR -->
+      <div class="ResponsiveBuscador">
+              <p id ="buscador" >
+          
+                <input id ="busquedabarra" type="search" name="busquedaproductos" placeholder="Que estas buscando..." >
+          
+                <input id ="buscar" style="cursor: pointer" type="submit" value="Buscar">
+          
+              </p>
+      </div>
+
+              <!-- TODA LA PARTE DE LA DERECHA, REGISTRARSE INGRESAR Y EL CARRITO -->
+         
+        <div class="ResponsiveBotonRegistrado">
+           <a href="paginaprincipal.html"> <img  id="registrado" src="img/botones logos/usuarionoregistrado.png" alt="" height="40px"></a>
+          </div>
+
+          <div class="ResponsiveRegistrarse">
+           <button style="cursor: pointer" id="registro" ><a href="Registro.html" style="color:white;">Registrarse</a> </button></div>
+         
+          <div class="ResponsiveIngresar">
+           <button style="cursor: pointer" id="ingresar"> <a href="InicioSesion.html" style="color:white;">Ingresar </a> </button></div>
+      
+            <div class="ResponsiveCarrito">
+              <a href="carrito.html"><button style="cursor: pointer" id="carrito"> <img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button></a>
+            </a> </div>
+          
+      </header>
+
+              <!-- BARRA DEL MENU -->
+
+        <nav>
+          <ul>
+            <li><a href="nosotros.html" id="boton"> NOSOTROS </a></li>
+            <li><a href="" id="boton"> NUESTROS PRODUCTOS </a></li>
+            <li><a href="" id="boton"> ELIGE TU ESTILO </a></li>
+            <li><a href="" id="boton"> COTIZACIONES </a></li>
+            <li><a href="" id="boton"> PROMOCIONES </a></li>
+            <li><a href="" id="boton"> CONTACTO </a></li>
+          </ul>
+        </nav>
+
+         <!-- FIN DEL HEADER-->
    <h1 id="#Titulo1">CATEGORIAS: TULAS </h1>
    
      <!-- Barra 1 de Tulas -->
