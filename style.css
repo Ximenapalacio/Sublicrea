@@ -1,6 +1,5 @@
 /*INICIO = HEADER DE TODAS LAS PAGINAS*/
 
-
 /*HEADER = De Todas las paginas*/
 body {
   margin: 0;
@@ -15,7 +14,7 @@ body {
   position: relative;
   
   left: -3%; /*posicion hacia la izquierda del logo*/
-  margin-bottom: 80px; /*Posicion del logo*/
+  margin-bottom: 100px; /*Posicion del logo*/
   margin-top: 20px;
 }
 
@@ -23,7 +22,7 @@ body {
 #logo2 {
   position: relative;
   margin-left: 30px;
-  margin-bottom: -10px; /*Posicion del Titulo con el buscador*/
+  margin-bottom: 10px; /*Posicion del Titulo con el buscador*/
   margin-top: -15%; /*Posicion del titulo*/
 }
 
@@ -49,6 +48,7 @@ body {
   position: absolute;
   right: 6%;
   top: 8%;
+  
 }
 
 #ingresar {
@@ -80,7 +80,7 @@ body {
   text-decoration: none;
   position: absolute;
   right: 8%;
-  top: 16%; /*Distancia del carrito con los botones*/
+  top: 19%; /*Distancia del carrito con los botones*/
   font-size: 15px;
 }
 
@@ -88,7 +88,6 @@ body {
 #buscador {
   position: absolute;
   left: 26%;
-  top: 28%;
   margin-top: -30px; /*la distancia del buscador con el titulo*/
 }
 
@@ -125,7 +124,7 @@ body {
 {
  position: relative; 
  text-align: center;
- margin-bottom: 0px; /*la distancia del buscador con la barra del menú*/
+ margin-bottom: 10px; /*la distancia del buscador con la barra del menú*/
  left: 70px; /*Posicion del buscador*/
 }
 
@@ -144,9 +143,9 @@ margin-bottom: -100px;
   margin-left: 350px;
 }
 
-/* RESPONSIVE DE LA PAGINA PRINCIPAL 500*/
+/* RESPONSIVE DE LA PAGINA PRINCIPAL (desde el dispositivo mas pequeño)*/
 
-@media only screen and (max-width:500px)
+@media only screen and (max-width:890px)
 {
 .ResponsiveBuscador, .ResponsiveLogo, .ResponsiveNombre
 {
@@ -163,7 +162,7 @@ margin-bottom: -100px;
   position: absolute;
   margin: 50px;
   top: -10px;
-  left: 110px;
+  right: 180px;
  }
 
  .ResponsiveIngresar
@@ -199,13 +198,14 @@ margin-bottom: -100px;
  .ResponsiveBuscador
  {
   left: -90px;
-  margin-bottom: 100px;
+  margin-bottom: 80px; /*Distancia del buscador con la barra de Menú*/
  }
-
 }
 
-/* RESPONSIVE DE LA PAGINA PRINCIPAL 700*/
-@media only screen and (min-width:700px)
+
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 900*/
+@media only screen and (min-width:900px)
 {
   .ResponsiveLogo
   {
@@ -219,7 +219,7 @@ margin-bottom: -100px;
   position: absolute;
   margin: 0px;
   top: 40px;
-  left: 430px;
+  right: 220PX;
  }
 
  .ResponsiveIngresar
@@ -242,13 +242,13 @@ margin-bottom: -100px;
   text-align: center;
   margin-bottom: -39px;
   margin-left: -9%;
-  margin-top: 6%; /*Posicion del titulo*/
+  margin-top: 4%; /*Posicion del titulo*/
   }
 
   .ResponsiveBuscador
   {
-   left: -70px;
-   margin-bottom: 100px;
+   left: -20px;
+   margin-bottom: 60px;
   }
 }
 
@@ -267,7 +267,7 @@ margin-bottom: -100px;
   position: absolute;
   margin: 0px;
   top: 40px;
-  right: 40px;
+  right: 220px;
  }
 
  .ResponsiveIngresar
@@ -296,18 +296,47 @@ margin-bottom: -100px;
   .ResponsiveBuscador
   {
    left: 80px;
-   margin-bottom: 100px;
+   margin-bottom: 20px;
   }
 }
 
-/* FIN : RESPONSIVE DEL HEADER DE  LA PAGINA PRINCIPAL*/
+
+/*Responsive de la barra de Menú*/
+@media (min-width:500px) {
+
+  .barra {
+      list-style: none;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+  }
+ 
+  .boton {
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+     
+  }
+ 
+  .lis {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 35px;
+      border-right: 1px solid black;
+  }
+
+  a:hover {
+      color:#8FD2E8;
+    }
+}
+
+
 
 ul {
-  background-color: #8FD2E8; /*color de la barra del menu*/
-  border-radius: 3px; /*borde de la barra del menu*/
   list-style: none;
-  padding: 10px;   
-  margin-top: -10px; 
+  padding: 10px;
+ 
+ 
 }
 
 a {
@@ -319,9 +348,67 @@ a {
 
 li {
   display: inline-block;
-  font-size: 16px; /*Tamaño de la letra de la barra del menu*/
+  font-size: 20px;
+ 
+ 
 }
-  
+
+
+@media only screen and (min-width: 700px ) {
+  .barra {
+      list-style: none;
+      padding: 30px;
+      text-align: center;
+  }
+ 
+  .boton {
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+  }
+ 
+  .lis {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 35px;
+      border-right: 1px solid black;
+  }
+
+  a:hover {
+      color:#8FD2E8;
+    }
+
+  @media only screen and (min-width: 1200px ) {
+      .barra {
+          list-style: none;
+          padding: 30px;
+          text-align: center;
+          background-color:white;
+          margin-top: -15px; /*Distancia de la barra del menu con el buscador*/
+      }
+     
+      .boton {
+          text-decoration: none;
+          padding: 15px;
+          color: black;
+      }
+     
+      .lis {
+          display: inline-block;
+          font-size: 20px;
+          margin-top: 35px;
+          border-right: 1px solid black;
+      }
+
+      a:hover {
+          color:#8FD2E8;
+        }
+  }
+}
+
+/* FIN : RESPONSIVE DEL HEADER DE  LA PAGINA PRINCIPAL*/
+
+
    /*FIN TEMPLATE*/
    
    
@@ -532,7 +619,7 @@ li {
         #EDCamisas 
         {
          margin-top: -20px;
-        padding-inline: 4%;
+        padding-inline: 5%;
         }
      
        #EDbotonescamisas 
@@ -569,7 +656,7 @@ li {
       padding: 0px;
       color: #8FD2E8;
       position: relative;
-      left: -1%;/*la posicion en relacion al boton de abajo*/
+      left: -5%;/*la posicion en relacion al boton de abajo*/
       margin-top: 110px;
       margin-left: 80px;
       }
@@ -638,7 +725,7 @@ li {
           padding: 5px;
           position: relative;
           bottom: -50px;
-          left: -20px;
+          left: -100px;
         }
   
          /*TEXTO= Camisas*/
@@ -646,10 +733,11 @@ li {
          {
           background-color: white;
           float: right;
-          width: 800px;
-          height: 200px;
+          width: 700px;
+          height: 100px;
           margin-top: 10px;
           margin-bottom: 12 px;
+          padding-inline: 70px; /*Posicion del texto al lado izquierdo*/
           font-size: 25px;
          }
   

@@ -6,120 +6,425 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOSOTROS</title>
     <style>
-       .logonombreeu{
-         position: absolute;
-          left: 260px;
-          top: -65px;  
+       /*HEADER = De Todas las paginas*/
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Inter', sans-serif; 
+}
+
+
+
+/*LOGO*/
+#logo1 {
+  position: relative;
+  
+  left: -3%; /*posicion hacia la izquierda del logo*/
+  margin-bottom: 100px; /*Posicion del logo*/
+  margin-top: 20px;
+}
+
+/*Nombre de la Empresa*/
+#logo2 {
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 10px; /*Posicion del Titulo con el buscador*/
+  margin-top: -15%; /*Posicion del titulo*/
+}
+
+/*Botonsito de registrarse*/
+#registrado {
+  position: absolute;
+  right: 23%; /*Posicion a la izquierda del botoncito*/
+  top: 8%;
+}
+
+/*Botones extremo derecho superior*/
+#registro {
+  display: inline-flex;
+  background-color: #8FD2E8;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  right: 6%;
+  top: 8%;
+  
+}
+
+#ingresar {
+  display:inline-flex;
+  background-color: #8FD2E8;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  right: 15%; /*Posicion del boton ingresar*/
+  top: 8%;
+}
+
+#carrito {
+  text-align: center;
+  display: inline-flex;
+  background-color: white;
+  color: #8FD2E8;
+  width: 130px;
+  height: 50px;
+  border-color: transparent;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  right: 8%;
+  top: 19%; /*Distancia del carrito con los botones*/
+  font-size: 15px;
+}
+
+
+#buscador {
+  position: absolute;
+  left: 26%;
+  margin-top: -30px; /*la distancia del buscador con el titulo*/
+}
+
+#busquedabarra {
+ 
+  width: 325px;
+  height: 43px;
+  font-size: 18px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid grey;
+  padding: 5%;
+}
+
+#buscar {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #E0A9C6;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-end-end-radius: 15px;
+  font-size: 20px;
+}
+
+/*Responsive del Header */
+
+.ResponsiveBuscador
+{
+ position: relative; 
+ text-align: center;
+ margin-bottom: 10px; /*la distancia del buscador con la barra del menú*/
+ left: 70px; /*Posicion del buscador*/
+}
+
+.ResponsiveLogo
+{
+position: relative;
+margin-top: 30px;
+right: 20px;
+left: -2%; /*posicion hacia la izquierda del logo*/
+margin-bottom: -100px;
+}
+
+.ResponsiveNombre
+{
+  margin-top: -150px;
+  margin-left: 350px;
+}
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL (desde el dispositivo mas pequeño)*/
+
+@media only screen and (max-width:890px)
+{
+.ResponsiveBuscador, .ResponsiveLogo, .ResponsiveNombre
+{
+ flex-direction: column;
+}
+
+.ResponsiveLogo
+{
+  left:-60px;
+}
+ 
+ .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 50px;
+  top: -10px;
+  right: 180px;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 140px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 20px;
+  top: 40px;
+ }
+
+ .ResponsiveCarrito
+ {
+  position: absolute;
+  right: 70px;
+  top:100px;
+ }
+
+.ResponsiveNombre
+ {
+  position: relative;
+  text-align: center;
+  margin-bottom: -40px;
+  margin-left: -12%;
+  margin-top: 10%; /*Posicion del titulo*/
+ }   
+
+ .ResponsiveBuscador
+ {
+  left: -90px;
+  margin-bottom: 80px; /*Distancia del buscador con la barra de Menú*/
+ }
+}
+
+
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 900*/
+@media only screen and (min-width:900px)
+{
+  .ResponsiveLogo
+  {
+    position: relative;
+    margin-left: -20px;
+    margin-top: 10px;
+  }
+
+  .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 0px;
+  top: 40px;
+  right: 220PX;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 130px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 20px;
+  top: 40px;
+ }
+
+  .ResponsiveNombre
+  {
+  position: relative;
+  text-align: center;
+  margin-bottom: -39px;
+  margin-left: -9%;
+  margin-top: 4%; /*Posicion del titulo*/
+  }
+
+  .ResponsiveBuscador
+  {
+   left: -20px;
+   margin-bottom: 60px;
+  }
+}
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 1200*/
+@media only screen and (min-width:1200px)
+{
+  .ResponsiveLogo
+  {
+    position: relative;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+
+  .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 0px;
+  top: 40px;
+  right: 220px;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 130px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 20px;
+  top: 40px;
+ }
+
+  .ResponsiveNombre
+  {
+  position: relative;
+  text-align: center;
+  margin-bottom: -45px;
+  margin-left: -5%;
+  margin-top: 2%; /*Posicion del titulo*/
+  }
+
+  .ResponsiveBuscador
+  {
+   left: 80px;
+   margin-bottom: 20px;
+  }
+}
+
+
+/*Responsive de la barra de Menú*/
+@media (min-width:500px) {
+
+  .barra {
+      list-style: none;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+  }
+ 
+  .boton {
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+     
+  }
+ 
+  .lis {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 35px;
+      border-right: 1px solid black;
+  }
+
+  a:hover {
+      color:#8FD2E8;
+    }
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 10px;
+ 
+ 
+}
+
+a {
+  text-decoration: none;
+  padding: 45px;
+  color: black;
+
+}
+
+li {
+  display: inline-block;
+  font-size: 20px;
+ 
+ 
+}
+
+
+@media only screen and (min-width: 700px ) {
+  .barra {
+      list-style: none;
+      padding: 30px;
+      text-align: center;
+  }
+ 
+  .boton {
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+  }
+ 
+  .lis {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 35px;
+      border-right: 1px solid black;
+  }
+
+  a:hover {
+      color:#8FD2E8;
+    }
+
+  @media only screen and (min-width: 1200px ) {
+      .barra {
+          list-style: none;
+          padding: 30px;
+          text-align: center;
+          background-color:white;
+          margin-top: -15px; /*Distancia de la barra del menu con el buscador*/
+      }
+     
+      .boton {
+          text-decoration: none;
+          padding: 15px;
+          color: black;
+      }
+     
+      .lis {
+          display: inline-block;
+          font-size: 20px;
+          margin-top: 35px;
+          border-right: 1px solid black;
+      }
+
+      a:hover {
+          color:#8FD2E8;
         }
-        .logograndeeu{
-         position: absolute;
-          left: -4px;
-          top: 60px;  
-        }
-        #ingresareu{
-         display: inline-flex;
-         background-color: #8FD2E8;
-         color: white;
-         width: 100px;
-         height: 43px;
-         border-color: transparent;
-         border-radius: 15px;
-         align-items: center;
-         justify-content: center;
-         text-decoration: none;
-         position: absolute;
-         right: 22%;
-         top: 8%;  
-        }
-        #Registrarseeu{
-         display: inline-flex;
-         background-color: #8FD2E8;
-         color: white;
-         width: 100px;
-         height: 43px;
-         border-color: transparent;
-         border-radius: 15px;
-         align-items: center;
-         justify-content: center;
-         text-decoration: none;
-         position: absolute;
-         right: 14%;
-         top: 8%;
-        }
-        #carritoeu{
-         text-align: center;
-         display: inline-flex;
-         background-color: white;
-         color: #8FD2E8;
-         width: 130px;
-         height: 50px;
-         border-color: transparent;
-         align-items: center;
-         justify-content: center;
-         text-decoration: none;
-         position: absolute;
-         right: 18%;
-         top: 18%;
-         font-size: 15px;  
-        }
-        #registradoeu{
-         position: absolute;
-         right: 30%;
-         top: 8.5%;
-        }
-        #busquedabarraeu {
-         position: absolute;
-         width: 400px;
-         height: 43px;
-         font-size: 18px;
-         border-top-left-radius: 15px;
-         border-bottom-left-radius: 15px;
-         border: 1px solid grey;
-         padding: 1%;
-         right: 800px;
-         top: 160px;
-        }
-        #buscareu {
-         position: absolute;
-         display: inline-flex;
-         align-items: center;
-         justify-content: center;
-         text-decoration: none;
-         background-color: #E0A9C6;
-         color: white;
-         width: 130px;
-         height: 43.6px;
-         border: none;
-         border-top-right-radius: 15px;
-         border-end-end-radius: 15px;
-         font-size: 20px;
-         right: 680px;
-         top: 160px;
-         padding: 0.3%;
-        }
-         li{
-         display: inline-block;
-         position: relative;
-         top: 210px;
-         font-size: 23px;
-        }
-         a{
-         text-decoration: none;
-         padding: 25px;
-         font-family: 'Inter', sans-serif;
-         color: black;
-        }
+  }
+}
+
+/* FIN : RESPONSIVE DEL HEADER DE  LA PAGINA PRINCIPAL*/
+
          .nosotroseu{
          background-color: #8FD2E8;
          position: relative;
-         top: 230px;
+         top: 10px;
          color: white;
          padding: 18px;
          font-family: 'Inter', sans-serif;
          font-size: 23px;
         }
          .nosotroeu{
-         top: 270px;
+         top: 50px;
          position: relative;
          width: 400px;
          height: 420px;
@@ -128,7 +433,7 @@
   width: 550px;
   height: 350px;
   position: absolute;
-  right: 0px;
+  right: -50px;
 }
 .nosotroeu a{
   color: white;
@@ -138,7 +443,7 @@
     font-size: 30px;
     font-family: sans-serif;
     position: relative;
-    top: 40px;
+    top: 130px;
     height: 30px;
 }
 #datos1eu {
@@ -146,18 +451,19 @@
     color: white;
     text-align: center;
     font-size: 20px;
-    bottom: 1%;
+    bottom:auto;
+    top:10px;
 }
 #textofooter1eu {
     position: relative;
-    top: 45px;
+    top: 35px;
 }
 #datos2eu {
     position: relative;
     border: 3px solid #8FD2E8;
     width: 100%;
     height: 50px;
-    top: 80%;
+    top: 50%;
     border-top: 10px solid white;
     text-align: center;
     font-size: 20px;
@@ -184,39 +490,76 @@
     position: relative;
     bottom: 0px;
     width: 100%;
-    top: 250px;  
+    top: 40px;  /*la distancia de las barras con el texto y el logo*/
 }
 
     </style>
 </head>
 <body>
+   <!-- HEADER-->
+  <div>
+    <!-- LOS DOS LOGOS-->
     <header>
-        <div class="logograndeeu"> <img src="Img/Logo/logo grande png.png" alt="" height="135px"></div>
-        <div class="logonombreeu"> <img src="Img/Logo/logo nombre png.png" alt="" height="300px"></div>
-        <a href=""><button style="cursor: pointer;" id="ingresareu">Ingresar</button></a>
-        <a href=""><button style="cursor: pointer;" id="Registrarseeu">Registrarse</button></a>
-        <a href=""><button style="cursor: pointer" id="carritoeu"><img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button></a>
-        <a href=""><img  id="registradoeu" src="img/botones logos/usuarionoregistrado.png" alt="" height="40px"></a>
-        <p id="buscadoreu" >      
-            <input id="busquedabarraeu" type="search" name="busquedaproductos" placeholder="Que estas buscando..." size="25" maxlength="4">
-            <input id="buscareu" style="cursor: pointer" type="submit" value="Buscar">
-            </p>
-              <nav>
-                <ul>
-                 <li><b><a href=""> NOSOTROS </a></b></li>
-                 <li><b><a href=""> NUESTROS PRODUCTOS </a></b></li>
-                 <li><b><a href=""> ELIGE TU ESTILO </a></b></li>
-                 <li><b><a href=""> COTIZACIONES </a></b></li>
-                 <li><b><a href=""> PROMOCIONES </a></b></li>
-                 <li><b><a href=""> CONTACTO </a></b></li>
-               </ul>
-            </nav>
+    
+      <div class="ResponsiveLogo">
+      <a href="paginaprincipal.html"> <img style="cursor: pointer" id="logo1" src="img/Logo/logo grande png.png" alt="" height="135"></a></div>
+
+      <div class="ResponsiveNombre">
+      <img  id="logo2" src="img/Logo/logo nombre png.png" alt="" height="300px"></div>
+    
+      <!-- BUSCADOR -->
+      <div class="ResponsiveBuscador">
+              <p id ="buscador" >
+          
+                <input id ="busquedabarra" type="search" name="busquedaproductos" placeholder="Que estas buscando..." >
+          
+                <input id ="buscar" style="cursor: pointer" type="submit" value="Buscar">
+          
+              </p>
+      </div>
+
+              <!-- TODA LA PARTE DE LA DERECHA, REGISTRARSE INGRESAR Y EL CARRITO -->
+         
+        <div class="ResponsiveBotonRegistrado">
+           <a href="paginaprincipal.html"> <img  id="registrado" src="img/botones logos/usuarionoregistrado.png" alt="" height="40px"></a>
+          </div>
+
+          <div class="ResponsiveRegistrarse">
+           <button style="cursor: pointer" id="registro" ><a href="Registro.html" style="color:white;">Registrarse</a> </button></div>
+         
+          <div class="ResponsiveIngresar">
+           <button style="cursor: pointer" id="ingresar"> <a href="InicioSesion.html" style="color:white;">Ingresar </a> </button></div>
+      
+            <div class="ResponsiveCarrito">
+              <a href="Carritocompras.html"><button style="cursor: pointer" id="carrito"> <img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button></a>
+            </a> </div>
+          
+      </header>
+
+              <!-- BARRA DEL MENU -->
+
+    <nav>
+      <ul class="barra">
+          <li class="lis"><a href="nosotros.html" class= "boton" id="boton"><strong>NOSOTROS</strong></a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> <strong>NUESTROS PRODUCTOS</strong></a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> <strong> ELIGE TU ESTILO </strong></a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> <strong>COTIZACIONES </strong></a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> <strong>PROMOCIONES</strong></a></li>
+          <li class="lis"  ><a href="" class= "boton" id="boton"><strong>CONTACTO</strong></a></li>
+      </ul>
+    </nav>
+      
+  </div>
+
+         <!-- FIN DEL HEADER-->
+
+
           <section class="nosotroseu"><b>NOSOTROS</b></section>
           <div class="nosotroeu">
             <a href=""><img src="img/Logo/logo grande png.png" alt=""></a>
             </div>
             <p>
-                <div style="position: absolute;left: 400px; top: 420px; width: 800px;">
+                <div style="position: absolute;left: 450px; top: 420px; width: 800px;">
                  <b id="menjeu">Sublicrea es un emprendimiento que nace en el año 2021, enfocada en  técnicas como lo son, sublimación, estampación, plotter de corte y algunos productos de papelería creativa y scrapbook. <br> <br>
                  Nuestro propósito es extendernos a nivel nacional para brindar a cada uno de nuestros clientes, productos y servicos de excelente calidad.
                  </b>

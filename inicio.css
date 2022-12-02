@@ -144,9 +144,9 @@ body {
     margin-left: 350px;
 }
 
-/* RESPONSIVE DE LA PAGINA PRINCIPAL 500*/
+/* RESPONSIVE DE LA PAGINA PRINCIPAL (desde el dispositivo mas pequeño)*/
 
-@media only screen and (max-width:500px)
+@media only screen and (max-width:890px)
 {
   .ResponsiveBuscador, .ResponsiveLogo, .ResponsiveNombre
   {
@@ -163,7 +163,7 @@ body {
     position: absolute;
     margin: 50px;
     top: -10px;
-    left: 110px;
+    right: 180px;
    }
 
    .ResponsiveIngresar
@@ -203,8 +203,10 @@ body {
    }
 }
 
-/* RESPONSIVE DE LA PAGINA PRINCIPAL 700*/
-@media only screen and (min-width:700px)
+
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 900*/
+@media only screen and (min-width:900px)
 {
     .ResponsiveLogo
     {
@@ -218,7 +220,7 @@ body {
     position: absolute;
     margin: 0px;
     top: 40px;
-    left: 430px;
+    right: 220PX;
    }
 
    .ResponsiveIngresar
@@ -266,7 +268,7 @@ body {
     position: absolute;
     margin: 0px;
     top: 40px;
-    right: 40px;
+    right: 220px;
    }
 
    .ResponsiveIngresar

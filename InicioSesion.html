@@ -14,38 +14,65 @@
 
  <body>
 
-     <!-- Logo y Nombre -->
-    <a href="paginaprincipal.html"><div class="Logo"><img src="img/Logo/logo grande png.png" alt="" height="100px"></div></a>
-    <div class="Nombre"><img src="img/Logo/logo nombre png.png" alt=""  height="300"></div>
+      <!-- HEADER-->
+  <div>
+    <!-- LOS DOS LOGOS-->
+    <header>
+    
+      <div class="ResponsiveLogo">
+      <a href="paginaprincipal.html"> <img style="cursor: pointer" id="logo1" src="img/Logo/logo grande png.png" alt="" height="135"></a></div>
 
-    <!-- BUSCADOR -->
-    <p id="buscador" >  
-      <input id="busquedabarra" type="search" name="busquedaproductos" placeholder="Que estas buscando..." size="25" maxlength="4">
-      <input id="buscar" style="cursor: pointer" type="submit" value="Buscar">
-    </p>
+      <div class="ResponsiveNombre">
+      <img  id="logo2" src="img/Logo/logo nombre png.png" alt="" height="300px"></div>
+    
+      <!-- BUSCADOR -->
+      <div class="ResponsiveBuscador">
+              <p id ="buscador" >
+          
+                <input id ="busquedabarra" type="search" name="busquedaproductos" placeholder="Que estas buscando..." >
+          
+                <input id ="buscar" style="cursor: pointer" type="submit" value="Buscar">
+          
+              </p>
+      </div>
 
-    <!-- TODA LA PARTE DE LA DERECHA, REGISTRARSE INGRESAR Y EL CARRITO -->
+              <!-- TODA LA PARTE DE LA DERECHA, REGISTRARSE INGRESAR Y EL CARRITO -->
          
-    <img  id="registrado" src="img/botones logos/usuarionoregistrado.png" alt="" height="40px">
+         <!-- TODA LA PARTE DE LA DERECHA, REGISTRARSE INGRESAR Y EL CARRITO -->
+         
+         <div class="ResponsiveBotonRegistrado">
+          <a href="paginaprincipal.html"> <img  id="registrado" src="img/botones logos/usuarionoregistrado.png" alt="" height="40px"></a>
+         </div>
 
-   
-    <a href="Registro.html"> <button style="cursor: pointer" id="registro">Registrarse</button></a> 
-      <button style="cursor: pointer" id="ingresar"> Ingresar</button>
-      <button style="cursor: pointer" id="carrito"><img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button>
-   
+         <div class="ResponsiveRegistrarse">
+          <button style="cursor: pointer" id="registro" > <a href="Registro.html"></a><a  style="color:white; margin-right:-180px;"></a> Registrarse </button></div>
+        
+         <div class="ResponsiveIngresar">
+          <button style="cursor: pointer" id="ingresar"> <a href="InicioSesion.html" style="color:white; margin-left: -90px;"></a>Ingresar </button></div>
+     
+           <div class="ResponsiveCarrito">
+             <a href="Carritocompras.html"><button style="cursor: pointer" id="carrito"> <img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button></a>
+           </a> </div>
+         
+     </header>
 
-   
-     <!-- Barra de Navegador -->
-     <nav>
-      <ul>
-        <li><a href="NOSOTROS.html">NOSOTROS</a></li>
-        <li><a href="">NUESTROS PRODUCTOS</a></li>
-        <li><a href="">ELIGE TU ESTILO </a></li>
-        <li><a href="">COTIZACIONES</a></li>
-        <li><a href="">PROMOCIONES</a></li>
-        <li><a href="">CONTACTO</a></li>
+              <!-- BARRA DEL MENU -->
+
+    <nav>
+      <ul class="barra">
+          <li class="lis"><a href="nosotros.html" class= "boton" id="boton"> NOSOTROS </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> NUESTROS PRODUCTOS </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> ELIGE TU ESTILO </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> COTIZACIONES </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> PROMOCIONES </a></li>
+          <li class="lis"  ><a href="" class= "boton" id="boton"> CONTACTO </a></li>
       </ul>
-     </nav>
+    </nav>
+      
+  </div>
+
+         <!-- FIN DEL HEADER-->
+
 
     <!-- Titulo de la pagina = Ingresar -->
    <h1 id="#Titulo1">INGRESAR</h1>
@@ -74,26 +101,31 @@
   </section>
  
 
-  <!-- PIE -->
+          <!-- BARRA DE DATOS INFERIOR -->
 
-  <footer id="datos1">
-   <p id = "textofooter1">
-   SUBLICREA <br>
-   Medellin. <br>
-   310 490 64 35 <br>
-   sublicreacol@gmail.com <br> </p>
-
-   <img id="redes" src="img/Botones/Facebook.png" alt="" height="50px">
-   <img id="redes" src="img/botones/instagram.png" alt="" height="50px">
-   <img id="redes" src="img/Botones/WhatsaAp.png" alt="" height="50px">
-
- </footer>
-
- <footer id="datos2">
-   <p id = "textofooter2">
-     Sublicrea 2022 Todos los Derechos reservados.
-   </p>
- </footer>
+          <footer class="EDdatos1">
+            <p class= "EDtextofooter1">
+            SUBLICREA <br>
+            Medellin. <br>
+            310 490 64 35 <br>
+            sublicreacol@gmail.com <br> </p>
+  
+            
+            <img class="EDredes" src="img/Botones/Facebook.png" alt="" height="60px">
+            <img class="EDredes" src="img/Botones/instagram.png" alt="" height="60px">
+            <img class="EDredes" src="img/Botones/WhatsaAp.png" alt="" height="60px">
+  
+          </footer>
+  
+          <footer class="EDdatos2">
+            <p class = "EDtextofooter2">
+              Sublicrea 2022 Todos los Derechos reservados.
+            </p>
+          </footer>
+  
+          
+  
+    </div>         
 
  </body>
 </html>
